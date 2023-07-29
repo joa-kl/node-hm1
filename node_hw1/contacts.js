@@ -22,7 +22,6 @@ function listContacts() {
         .catch((err) => console.log(err));
 }
 
-// listContacts();
 
 function getContactById(contactId) {
     fs.readFile(contactsPath)
@@ -43,7 +42,6 @@ function getContactById(contactId) {
         .catch((err) => console.log(err.message));
 }
 
-// getContactById("drsAJ4SHPYqZeG-83QTVv");
 
 function removeContact(contactId) {
     fs.readFile(contactsPath)
@@ -100,8 +98,6 @@ function addContact(name, email, phone) {
     console.log(`${name} has been added to your contacts`.green);
 
 }
-
-// addContact("Franek", "Franek@warzywo", "12334566");
 
 module.exports = {
     listContacts,

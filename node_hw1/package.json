@@ -5,7 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "start:dev": "nodemon index.js"
+    "start:dev": "nodemon index.js",
+    "db": "node db",
+    "course01": "node course01/app.js"
   },
   "author": "Joanna Klein",
   "license": "ISC",
@@ -13,6 +15,7 @@
   "description": "",
   "dependencies": {
     "commander": "^11.0.0",
+    "date-fns": "^2.30.0",
     "nodemon": "^3.0.1"
   }
 }
