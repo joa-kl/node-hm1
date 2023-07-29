@@ -101,7 +101,7 @@ function addContact(name, email, phone) {
 
 }
 
-addContact("Franek", "Franek@warzywo", "12334566");
+// addContact("Franek", "Franek@warzywo", "12334566");
 
 module.exports = {
     listContacts,
