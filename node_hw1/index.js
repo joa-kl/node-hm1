@@ -1,10 +1,7 @@
-// const { Command } = require("commander");
+
 const contacts = require('./contacts');
-
-// const argv = require("yargs").argv;
-
-// TODO: refaktor
 const { Command } = require("commander");
+
 const program = new Command();
 program
     .option("-a, --action <type>", "choose action")
@@ -14,10 +11,8 @@ program
     .option("-p, --phone <type>", "user phone");
 
 program.parse(process.argv);
-
 const argv = program.opts();
 
-// TODO: refaktor
 function invokeAction({ action, id, name, email, phone }) {
     switch (action) {
         case "list":
