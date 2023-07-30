@@ -1,5 +1,6 @@
 const fs = require('fs').promises;
 const path = require('path');
+require('colors');
 
 const contactsPath = path.join(__dirname, './db/contacts.json');
 const contactsDataBase = require("./db/contacts.json");
