@@ -23,7 +23,6 @@ function listContacts() {
         .catch((err) => console.log(err));
 }
 
-
 function getContactById(contactId) {
     fs.readFile(contactsPath)
         .then((data) => {
